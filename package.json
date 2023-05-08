@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "cypress":"cypress",
     "test": "jest"
   },
   "keywords": [],
@@ -11,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^29.5.0",
+    "cypress": "^12.6.0",
     "jest": "^29.5.0"
   }
 }
