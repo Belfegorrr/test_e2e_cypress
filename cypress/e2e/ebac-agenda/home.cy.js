@@ -33,4 +33,13 @@ describe('Testes para a home', () => {
         cy.get('input[type="tel"]').type('54981316')
         cy.get('.adicionar').click()
     })
+    it('Deve renderizar o contato adicionado', () => {        
+        cy.get('.sc-iAEyYk > ').should('have.length', 5)
+    })
+    it('Deve deletar usuario', () =>{        
+        cy.get(':nth-child(3) > .sc-gueYoa > .delete').click()   
+    })
+    it('Deve comprovar que deletou usuário', () => {        
+        cy.get('.sc-iAEyYk > ').should('have.length', 4)
+    })    
 })
